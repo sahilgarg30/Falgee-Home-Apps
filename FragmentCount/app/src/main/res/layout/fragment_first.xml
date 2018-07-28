@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/firstfrag"
+    android:weightSum="3"
+    tools:context="com.example.sahil.fragmentcount.FirstFragment">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textSize="64dp"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:paddingTop="50dp"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textSize="32dp"
+        android:layout_weight="1"
+        android:text="Change Fragment" />
+
+    <Button
+        android:id="@+id/button3"
+        android:textSize="28dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Increment" />
+</LinearLayout>

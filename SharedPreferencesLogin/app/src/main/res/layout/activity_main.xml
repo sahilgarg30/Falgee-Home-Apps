@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sahil.sharedpreferenceslogin.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:textSize="16dp"
+        android:text="UserName : "
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/name_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="16dp"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:text="Password : "
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/name_et"
+        android:layout_alignLeft="@+id/login_btn"
+        android:layout_alignStart="@+id/login_btn" />
+
+    <EditText
+        android:id="@+id/password_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/name_et"
+        android:layout_alignStart="@+id/name_et" />
+
+    <TextView
+        android:id="@+id/confirm_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:layout_below="@+id/password_et"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp" />
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="20dp"
+        android:onClick="loginSecond"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/confirm_tv"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sahil.implicitintentgmail.MainActivity">
+
+    <EditText
+        android:id="@+id/to_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="To address"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/subject_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/to_et"
+        android:layout_alignStart="@+id/to_et"
+        android:layout_below="@+id/to_et"
+        android:layout_marginTop="65dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Subject"/>
+
+    <EditText
+        android:id="@+id/text_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="43dp"
+        android:ems="10"
+        android:hint="Text"
+
+        android:inputType="textMultiLine"
+        android:layout_above="@+id/button"
+        android:layout_alignLeft="@+id/subject_et"
+        android:layout_alignStart="@+id/subject_et" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:text="Send to Mail"
+        android:onClick="sendMail"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
